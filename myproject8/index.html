@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <style>
+    body {
+      background-color: blue;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .form {
+      height: 600px;
+      width: 400px;
+      background-color: white;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      border-radius: 10px;
+      h1 {
+        text-align: center;
+        position: relative;
+        top: 9px;
+        font-size: 30px;
+      }
+      input {
+        margin-left: 30px;
+        height: 40px;
+        width: 80%;
+        margin-top: 15px;
+      }
+      a {
+        align-content: center;
+        text-decoration: none;
+        gap: 3px;
+        margin-top: 10px;
+        color: blue;
+        position: relative;
+        right: -35%;
+        font-size: 15px;
+      }
+      button {
+        margin-left: 30px;
+        height: 50px;
+        width: 82%;
+        margin-top: 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgba(0, 0, 255, 0.622);
+        color: white;
+        font-weight: bold;
+      }
+      button:hover {
+        background-color: blue;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  </style>
+  <body>
+    <form action="server.php" method="post">
+      <div class="form">
+        <h1>Login</h1>
+        <input type="email" placeholder=" Email" name="email" /> <br />
+        <input type="password" placeholder=" Password" name="password" />
+        <a href="">Forgot Password?</a> <br />
+        <button name="login" type="submit">Login</button><br />
+        <p>
+          dont have an account?<a
+            href="Registrationpage.html"
+            name="anch"
+            style="position: relative; left: 5px"
+            >Sign up</a
+          >
+        </p>
+        <hr />
+        <center>or</center>
+        <button
+          style="background-color: rgb(195, 194, 194); border: 1px solid black"
+        >
+          Login with facebook
+        </button>
+        <button
+          style="background-color: rgb(195, 194, 194); border: 1px solid black"
+        >
+          Login with Google
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
